@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JackShen World</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio with my Web Development projects">
+    <meta name="author" content="JackShen">
+
+    <meta property="og:image" content="static/img/main-img.png" />
+    <meta property="og:image:alt" content="Portfolio with my Web Development projects" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:title" content="JackShen World" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jackshen.herokuapp.com/home/" />
+    <meta property="og:image:url" content="https://jackshen.herokuapp.com/static/home/img/home.png" />
+    <meta property="og:description" content="Portfolio with my projects" />
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Main core CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='../static/libs/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../static/libs/css/normalize.min.css">
+
+    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="../static/home/css/home.css">
+    <link rel="stylesheet" href="../static/home/css/xmas-lights.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YW2L42J25"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6YW2L42J25');
+    </script>
+</head>
+
+<body>
+<div class="spinner">
+  <div class="inner one"></div>
+  <div class="inner two"></div>
+  <div class="inner three"></div>
+</div>
+
+<div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+    </svg>
+</div>
+
+<div class="app">
+    <div class="header">
+        <a href=""><img class="logo-img" src="../favicon.ico" alt="logo"/></a>
+        <div class="header-menu">
+            <a class="menu-link" href=""><i class="fas fa-film" aria-hidden="true"></i>&nbsp;Strichka</a>
+            <a class="menu-link" id="cypher-link" href=""><i class="fas fa-mountain" aria-hidden="true"></i>&nbsp;Fjord API</a>
+            <a class="menu-link" id="todo-link" href=""><i class="fas fa-list-ul" aria-hidden="true"></i>&nbsp;To-Do App</a>
+            <a class="menu-link" id="sentimento-link" href=""><i class="fas fa-theater-masks" aria-hidden="true"></i>&nbsp;Sentimento</a>
+        </div>
+
+        <a class="header-profile" href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/jackshen"><img class="profile-img" id="github" src="../static/img/github-dark.webp" alt="repository"/></a>
+        <i id="xmas-version" style="color: #2196f3; font-size: 1.75rem; margin-left: 10px; cursor: pointer;" class="fas fa-snowflake" onclick="snowfall()"></i>
+        <i id="default-version" style="color: var(--theme-color); font-size: 1.5rem; display: none; margin-left: 10px; cursor: pointer;" class="fas fa-undo fa-sm"></i>
+    </div>
+
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="content-wrapper">
+                <div class="content-section">
+                    <div class="mobile-btn" style="width: 100%; text-align: center;">
+                        <a class="awesome-app-button" style="margin-right: 10px;" href="">Strichka</a>
+                        <a class="awesome-app-button" href="">Fjord API</a>
+                    </div>
+
+                    <div class="mobile-btn" style="width: 100%; text-align: center;">
+                        <a class="awesome-app-button" style="margin-right: 10px; margin-bottom: 0;" href="">To-Do App</a>
+                        <a class="awesome-app-button" style="margin-bottom: 0;" href="">Sentimento</a>
+                    </div>
+
+                    <h1 class="section-title">Other Projects from My GitHub</h1>
+
+                    <div class='items'>
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/slab-allocator" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-0'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Slab Allocator
+                                    </text>
+                                    <g clip-path='url(#clip-0)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Slab Allocator
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/CCompiler" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-1'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        C Compiler (Python)
+                                    </text>
+                                    <g clip-path='url(#clip-1)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            C Compiler (Python)
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/football-guess" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-2'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Football Telegram Bot
+                                    </text>
+                                    <g clip-path='url(#clip-2)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Football Telegram Bot
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/sensus" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-3'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Sentiment Analysis (UA)
+                                    </text>
+                                    <g clip-path='url(#clip-3)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Sentiment Analysis (UA)
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/sentimento" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-4'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Sentiment Analysis (EN)
+                                    </text>
+                                    <g clip-path='url(#clip-4)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Sentiment Analysis (EN)
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/cpu-scheduling" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-5'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Scheduling Algorithms
+                                    </text>
+                                    <g clip-path='url(#clip-5)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Scheduling Algorithms
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/android-samples" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-6'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Android Project
+                                    </text>
+                                    <g clip-path='url(#clip-6)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Android Project
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/implicit-transition-graph" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-7'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Planning Algorithm
+                                    </text>
+                                    <g clip-path='url(#clip-7)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Planning Algorithm
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/graph-plotter" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-8'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Graph Plotter (JavaFX)
+                                    </text>
+                                    <g clip-path='url(#clip-8)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Graph Plotter (JavaFX)
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/parallel-calc" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-9'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Parallel Programming
+                                    </text>
+                                    <g clip-path='url(#clip-9)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Parallel Programming
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/assembly-labs" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-10'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Basics of Assembly
+                                    </text>
+                                    <g clip-path='url(#clip-10)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Basics of Assembly
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/multi-editor" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-11'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Graphical & Image Editor
+                                    </text>
+                                    <g clip-path='url(#clip-11)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/item-back.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Graphical & Image Editor
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h1 class="section-title">Best Web Dev Projects</h1>
+
+
+                    <div class='items'>
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/concentus" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-12'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Concentus
+                                    </text>
+                                    <g clip-path='url(#clip-12)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/concentus.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Concentus
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/constellation" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-13'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Constellation
+                                    </text>
+                                    <g clip-path='url(#clip-13)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/constellation.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Constellation
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/expressionism" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-14'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Expressionism
+                                    </text>
+                                    <g clip-path='url(#clip-14)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/expressionism.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Expressionism
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/expressionism2" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-15'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Expressionism II
+                                    </text>
+                                    <g clip-path='url(#clip-15)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/expressionism2.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Expressionism II
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/fractal" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-16'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Fractal Zoom
+                                    </text>
+                                    <g clip-path='url(#clip-16)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/fractal.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Fractal Zoom
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/galaxy" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-17'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Galaxy
+                                    </text>
+                                    <g clip-path='url(#clip-17)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/galaxy.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Galaxy
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/heartverse" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-18'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Heartverse
+                                    </text>
+                                    <g clip-path='url(#clip-18)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/heartverse.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Heartverse
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/infinity" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-19'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Infinity
+                                    </text>
+                                    <g clip-path='url(#clip-19)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/infinity.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Infinity
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/neon" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-20'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Neon Heart
+                                    </text>
+                                    <g clip-path='url(#clip-20)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/neon.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Neon Heart
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/phoenix" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-21'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Phoenix
+                                    </text>
+                                    <g clip-path='url(#clip-21)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/phoenix.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Phoenix
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/psychedelic" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-22'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Psychedelic
+                                    </text>
+                                    <g clip-path='url(#clip-22)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/psychedelic.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Psychedelic
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/spirals" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-23'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Spirals (Fractal) Symphony
+                                    </text>
+                                    <g clip-path='url(#clip-23)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/spirals.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Spirals (Fractal) Symphony
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/whirlpool" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-24'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Whirlpool
+                                    </text>
+                                    <g clip-path='url(#clip-24)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/whirlpool.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Whirlpool
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div class='item'>
+                            <ul class="lightrope">
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                                <li></li> <li></li> <li></li> <li></li> <li></li> <li></li>
+                            </ul>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 1100 600'>
+                                <a href="../projects/xmas" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-25'>
+                                            <circle cx='0' cy='0' fill='#000' r='400px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' id='xmas-text' dy='.3em' x='50%' y='50%' style="font-size: 3rem;">
+                                        XMAS WONDERLAND
+                                    </text>
+                                    <g clip-path='url(#clip-25)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/xmas-intro.webp'></image>
+                                        <text id="xmas-text" class='svg-masked-text' dy='.3em' x='50%' y='50%' style="font-size: 3rem;">
+                                            XMAS WONDERLAND
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+
+                         <div class='item'>
+                            <svg class='item-svg' preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                                <a href="../projects/secret" target="_blank">
+                                    <defs>
+                                        <clipPath id='clip-26'>
+                                            <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                                        Secret Project
+                                    </text>
+                                    <g clip-path='url(#clip-26)'>
+                                        <image class="item-image" height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='/static/img/projects/secret.webp'></image>
+                                        <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                            Secret Project
+                                        </text>
+                                    </g>
+                                </a>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--TODO-->
+<span class="content-section-footer-title">JackShen Engeneering, 2022</span>
+
+<!--Main core JS, JQuery -->
+<script src="../static/libs/js/jquery.min.js"></script>
+<script src="../static/libs/js/prefixfree.min.js"></script>
+<script src="../static/home/js/snowstorm.js"></script>
+<script src="../static/home/js/cards.js"></script>
+<script src="../static/base.js"></script>
+<script>
+let theme_flag = 1;
+let github = document.getElementById('github');
+
+$('.dark-light').click(function() {
+    if (theme_flag) {
+        github.src = "static/img/github-light.webp";
+        theme_flag = 0;
+    }
+    else {
+        github.src = "static/img/github-dark.webp";
+        theme_flag = 1;
+    }
+});
+</script>
+</body>
+</html>

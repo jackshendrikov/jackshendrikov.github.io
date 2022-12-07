@@ -1,0 +1,147 @@
+.lightrope {
+  margin-top: -58%;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+.lightrope li {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: flash-1;
+  background: #00f7a5;
+  border-radius: 50%;
+  box-shadow: 0 2.333333px 12px 3px #00f7a5;
+  display: inline-block;
+  height: 14px;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  webkit-animation-duration: 2s;
+  webkit-animation-fill-mode: both;
+  webkit-animation-iteration-count: infinite;
+  webkit-animation-name: flash-1;
+  width: 6px;
+}
+.lightrope li:nth-child(2n + 1) {
+  animation-duration: 0.4s;
+  animation-name: flash-2;
+  background: #0ff;
+  box-shadow: 0 2.333333px 12px 3px rgba(0, 255, 255, 0.5);
+  webkit-animation-duration: 0.4s;
+  webkit-animation-name: flash-2;
+}
+.lightrope li:nth-child(4n + 2) {
+  animation-duration: 1.1s;
+  animation-name: flash-3;
+  background: #f70094;
+  box-shadow: 0 2.333333px 12px 3px #f70094;
+  webkit-animation-duration: 1.1s;
+  webkit-animation-name: flash-3;
+}
+.lightrope li:nth-child(odd) {
+  animation-duration: 1.8s;
+  webkit-animation-duration: 1.8s;
+}
+.lightrope li:nth-child(3n + 1) {
+  animation-duration: 1.4s;
+  webkit-animation-duration: 1.4s;
+}
+.lightrope li:before {
+  background: #222;
+  border-radius: 3px;
+  content: "";
+  height: 4px;
+  left: 1px;
+  position: absolute;
+  top: -3px;
+  width: 4px;
+}
+.lightrope li:after {
+  border-bottom: solid #222 2px;
+  border-radius: 50%;
+  content: "";
+  height: 9.3333333px;
+  left: 6px;
+  position: absolute;
+  top: -7px;
+  width: 26px;
+}
+.lightrope li:last-child:after {
+  content: none;
+}
+.lightrope li:first-child {
+  margin-left: -20px;
+}
+@-webkit-keyframes flash-1 {
+  0%,
+  100% {
+    background: #00f7a5;
+    box-shadow: 0 2.333333px 12px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+@keyframes flash-1 {
+  0%,
+  100% {
+    background: #00f7a5;
+    box-shadow: 0 2.333333px 12px 3px #00f7a5;
+  }
+  50% {
+    background: rgba(0, 247, 165, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(0, 247, 165, 0.2);
+  }
+}
+@-webkit-keyframes flash-2 {
+  0%,
+  100% {
+    background: #0ff;
+    box-shadow: 0 2.333333px 12px 3px #0ff;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@keyframes flash-2 {
+  0%,
+  100% {
+    background: #0ff;
+    box-shadow: 0 2.333333px 12px 3px #0ff;
+  }
+  50% {
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(0, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes flash-3 {
+  0%,
+  100% {
+    background: #f70094;
+    box-shadow: 0 2.333333px 12px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(247, 0, 148, 0.2);
+  }
+}
+@keyframes flash-3 {
+  0%,
+  100% {
+    background: #f70094;
+    box-shadow: 0 2.333333px 12px 3px #f70094;
+  }
+  50% {
+    background: rgba(247, 0, 148, 0.4);
+    box-shadow: 0 2.333333px 12px 3px rgba(247, 0, 148, 0.2);
+  }
+}

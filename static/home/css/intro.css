@@ -1,0 +1,241 @@
+@import "https://fonts.googleapis.com/css?family=Lalezar";
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #614385;
+  background: radial-gradient(at center, #614385, #516395);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lalezar", cursive;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  overflow: hidden;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.remove {
+  display: none !important;
+}
+
+.container {
+  align-items: center;
+  display: none;
+  height: 100%;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.canvas-container {
+  height: 100%;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+  width: 100%;
+}
+
+.canvas-container canvas {
+  mix-blend-mode: lighten;
+  position: absolute;
+  transform: translateZ(0);
+  webkit-transform: translateZ(0);
+}
+
+#Logo-Defs {
+  position: absolute;
+}
+
+#Logo {
+  align-items: center;
+  display: flex;
+  fill: #aa7f3d;
+  fill: url("#MyGradient");
+  height: 100%;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  stroke: #eebe7b;
+  stroke-miterlimit: 5;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 3;
+}
+
+.Animate-Draw {
+  animation-delay: 0s, 6s, 6s;
+  animation-duration: 7s, 2s, 2s;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+  animation-name: DrawLine, FadeStroke, FillIn;
+  animation-timing-function: ease-in-out;
+  fill-opacity: 0;
+}
+
+#Draw-Mark {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+}
+
+#Draw-Frame {
+  animation-delay: 1s, 5s, 5s;
+  animation-duration: 5s, 1s, 1s;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+#Draw-Text {
+  animation-delay: 3s, 5s, 5s;
+  animation-duration: 4s, 1s, 1s;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+@keyframes DrawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes FadeStroke {
+  to {
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes FillIn {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+}
+
+#logo-text {
+  bottom: 60px;
+  color: #ccc7c3;
+  left: calc(50% - 190px);
+  margin: auto;
+  position: absolute;
+  z-index: 3;
+}
+
+#logo-text h1 {
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#logo-text h2 span {
+  font-size: 2.7em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  #logo-text {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+  #logo-text h1 {
+    font-size: 1.5em;
+  }
+
+  #logo-text h2 span {
+    font-size: 2em;
+  }
+}
+
+.spinner {
+  border-radius: 50%;
+  height: 120px;
+  left: 50%;
+  perspective: 800px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  webkit-transform: translate(-50%, -50%);
+  width: 120px;
+}
+
+.inner {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.inner.one {
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 5px solid #f7f48b;
+  left: 0;
+  top: 0;
+}
+
+.inner.two {
+  animation: rotate-two 1s linear infinite;
+  border-right: 5px solid #f47c7c;
+  right: 0;
+  top: 0;
+}
+
+.inner.three {
+  animation: rotate-three 1s linear infinite;
+  border-top: 5px solid #a1de93;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(50deg) rotateY(55deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(50deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
