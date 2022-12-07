@@ -1,7 +1,7 @@
 <h1 align="center"> JackShen World</h1>
 
 <p align="center">
-  <img src="img/home/intro.webp" alt="Welcome Logo" width="800">
+  <img src="img/intro.webp" alt="Welcome Logo" width="800">
 </p>
 
 <div align="center"> 
