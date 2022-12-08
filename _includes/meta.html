@@ -12,11 +12,11 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image" content="{% if page.custom_logo %}{{ site.baseurl }}/static/img/projects/{{ page.title}}.webp{% else %}}{{ site.logo }}">
+    <meta property="og:image" content="{% if page.custom_logo %}{{ site.baseurl }}/static/img/projects/{{ page.title}}.webp{% else %}}{{ site.logo }}{% endif %}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ page.url | absolute_url }}">
     <meta property="twitter:title" content="{{ page.title }}">
     <meta property="twitter:description" content="{{ site.description }}">
-    <meta property="twitter:image" content="{% if page.custom_logo %}{{ site.baseurl }}/static/img/projects/{{ page.title}}.webp{% else %}}{{ site.logo }}">
+    <meta property="twitter:image" content="{% if page.custom_logo %}{{ site.baseurl }}/static/img/projects/{{ page.title}}.webp{% else %}}{{ site.logo }}{% endif %}">
