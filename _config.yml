@@ -10,6 +10,8 @@ google_analytics: G-6YW2L42J25
 
 url: https://russkiy-voyennyy-korabl-idi-nakhuy.github.io
 
+baseurl: ""
+
 plugins:
   - jekyll-feed
 

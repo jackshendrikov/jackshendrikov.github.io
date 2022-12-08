@@ -5,8 +5,8 @@
 
      {% include meta.html %}
 
-    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/xmas/home.css">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/xmas/home.css">
 
     {% include analytics.html %}
 </head>
@@ -14,13 +14,13 @@
 <body>
 <style>
     @font-face {
-    font-family: 'Grinched';  src: local('Grinched'), url("{{ site.base_url }}/static/home/font/GrinchedRegular.otf") format('woff');
+    font-family: 'Grinched';  src: local('Grinched'), url("{{ site.baseurl }}/static/home/font/GrinchedRegular.otf") format('woff');
     }
 
     body {
-        background-image: url("{{ site.base_url }}/static/projects/xmas/snow1.png"),
-        url("{{ site.base_url }}/static/projects/xmas/snow2.png"),
-        url("{{ site.base_url }}/static/projects/xmas/snow3.png");
+        background-image: url("{{ site.baseurl }}/static/projects/xmas/snow1.png"),
+        url("{{ site.baseurl }}/static/projects/xmas/snow2.png"),
+        url("{{ site.baseurl }}/static/projects/xmas/snow3.png");
     }
 
     h1 {
@@ -36,7 +36,7 @@
 </style>
 
 <audio controls loop autoplay>
-  <source src="{{ site.base_url }}/static/audio/we.wish.you.2.ogg" type="audio/ogg">
+  <source src="{{ site.baseurl }}/static/audio/we.wish.you.2.ogg" type="audio/ogg">
 </audio>
 
 <div id="tree">
@@ -46,7 +46,7 @@
 <script type="text/javascript">
     const links = ['../game/', '../scene/'];
 </script>
-<script src="{{ site.base_url }}/static/projects/xmas/home.js"></script>
+<script src="{{ site.baseurl }}/static/projects/xmas/home.js"></script>
 
 </body>
 </html>

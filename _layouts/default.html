@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   <title>{{ site.title }}</title>
+
+   {% include meta.html %}
+
+   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+   <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/reset.min.css">
+   <link rel="stylesheet" href="{{ site.baseurl }}/static/home/css/intro.css">
+
+   {% include analytics.html %}
+</head>
+
+<body>
+<div class="spinner">
+   <div class="inner one"></div>
+   <div class="inner two"></div>
+   <div class="inner three"></div>
+</div>
+
+<div class="container">
+   <div class="canvas-container">
+      {{ content }}
+   </div>
+</div>
+
+<script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/static/libs/js/TweenMax.min.js"></script>
+<script src="{{ site.baseurl }}/static/home/js/intro.js"></script>
+<script>
+   setTimeout(() => {
+           setTimeout(() => {
+               window.open('{{ site.baseurl }}/home/', '_self');
+           }, 80 * 100)
+       }, 0);
+</script>
+
+</body>
+</html>

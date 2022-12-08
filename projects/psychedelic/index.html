@@ -5,9 +5,9 @@
 
     {% include meta.html %}
 
-    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.base_url }}/static/libs/css/normalize.min.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/psychedelic/style.css">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/normalize.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/psychedelic/style.css">
 
     {% include analytics.html %}
 </head>
@@ -15,7 +15,7 @@
 <body>
 <div id="container"></div>
 
-<script src="{{ site.base_url }}/static/libs/js/three.min.js"></script>
+<script src="{{ site.baseurl }}/static/libs/js/three.min.js"></script>
 
 <script id="vertexShader" type="x-shader/x-vertex">
 void main() {
@@ -105,6 +105,6 @@ void main(void) {
 }
 </script>
 
-<script  src="{{ site.base_url }}/static/projects/psychedelic/script.js"></script>
+<script  src="{{ site.baseurl }}/static/projects/psychedelic/script.js"></script>
 </body>
 </html>

@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-   <title>{{ site.title }}</title>
+---
+layout: default
+---
 
-   {% include meta.html %}
-
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
-   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-   <link rel="stylesheet" href="static/libs/css/reset.min.css">
-   <link rel="stylesheet" href="static/home/css/intro.css">
-
-   {% include analytics.html %}
-</head>
-
-<body>
-<div class="spinner">
-   <div class="inner one"></div>
-   <div class="inner two"></div>
-   <div class="inner three"></div>
-</div>
-
-<div class="container">
-   <div class="canvas-container">
       <canvas id="canvas"></canvas>
       <div class="blur blurTop">
          <canvas class="canvas" id="blurCanvasTop"></canvas>
@@ -195,19 +175,3 @@
          <use id="Draw-Text" class="Animate-Draw" xlink:href="#ShieldOrnament"></use>
          <use id="Draw-Mark" class="Animate-Draw" xlink:href="#Eagle"></use>
       </svg>
-   </div>
-</div>
-
-<script src="static/libs/js/jquery.min.js"></script>
-<script src="static/libs/js/TweenMax.min.js"></script>
-<script src="static/home/js/intro.js"></script>
-<script>
-   setTimeout(() => {
-           setTimeout(() => {
-               window.open('home/', '_self');
-           }, 80 * 100)
-       }, 0);
-</script>
-
-</body>
-</html>

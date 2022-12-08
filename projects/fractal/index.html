@@ -5,8 +5,8 @@
 
     {% include meta.html %}
 
-    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/fractal/style.css">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/fractal/style.css">
 
     {% include analytics.html %}
 </head>
@@ -17,9 +17,9 @@
 </div>
 
 <div class="choices">
-    <button data-url="{{ site.base_url }}/static/projects/fractal/img/1.png">1</button>
-    <button data-url="{{ site.base_url }}/static/projects/fractal/img/2.png">2</button>
-    <button data-url="{{ site.base_url }}/static/projects/fractal/img/3.png">3</button>
+    <button data-url="{{ site.baseurl }}/static/projects/fractal/img/1.png">1</button>
+    <button data-url="{{ site.baseurl }}/static/projects/fractal/img/2.png">2</button>
+    <button data-url="{{ site.baseurl }}/static/projects/fractal/img/3.png">3</button>
 </div>
 
 <script id="vertex-shader" type="x-shader/x-vertex">
@@ -74,11 +74,11 @@
             ctx.drawImage(image, 0, 0, tex.width, tex.height);
             main();
         };
-        image.src = "{{ site.base_url }}/static/projects/fractal/img/1.png";
+        image.src = "{{ site.baseurl }}/static/projects/fractal/img/1.png";
         image.crossOrigin = 'anonymous';
     }
 </script>
 
-<script  src="{{ site.base_url }}/static/projects/fractal/script.js"></script>
+<script  src="{{ site.baseurl }}/static/projects/fractal/script.js"></script>
 </body>
 </html>
