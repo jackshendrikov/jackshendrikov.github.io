@@ -1,6 +1,8 @@
 .idea
-.DS_Store
 __pycache__
-logs
-.env
 !.gitkeep
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

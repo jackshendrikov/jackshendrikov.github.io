@@ -12,10 +12,7 @@ url: https://russkiy-voyennyy-korabl-idi-nakhuy.github.io
 
 base_url: ""
 
-permalink: /
-
-gems:
-  - jekyll-sitemap
+plugins:
   - jekyll-feed
 
 exclude:
