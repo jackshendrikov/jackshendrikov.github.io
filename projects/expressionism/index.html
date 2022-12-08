@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
     <title>Expressionism</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../static/projects/expressionism/style.css">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/expressionism/style.css">
+
+    {% include analytics.html %}
 </head>
 
 <body>
 <div id="container"></div>
 
-<script src="../../static/libs/js/three.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/three.min.js"></script>
 
 <script id="vertexShader" type="x-shader/x-vertex">
     void main() {
@@ -59,6 +62,6 @@
     }
 </script>
 
-<script  src="../../static/projects/expressionism/script.js"></script>
+<script  src="{{ site.base_url }}/static/projects/expressionism/script.js"></script>
 </body>
 </html>

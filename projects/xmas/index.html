@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
     <title>Happy New Year</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../static/libs/css/reset.min.css">
-    <link rel="stylesheet" href="../../static/projects/xmas/intro.css">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/libs/css/reset.min.css">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/xmas/intro.css">
+
+    {% include analytics.html %}
 </head>
 
 <body>

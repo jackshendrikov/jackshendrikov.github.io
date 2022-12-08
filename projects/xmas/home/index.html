@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Merry Christmas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../../static/projects/xmas/home.css">
+
+     {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/xmas/home.css">
+
+    {% include analytics.html %}
 </head>
 
 <body>
 <style>
     @font-face {
-    font-family: 'Grinched';  src: local('Grinched'), url("../../../static/home/font/GrinchedRegular.otf") format('woff');
+    font-family: 'Grinched';  src: local('Grinched'), url("{{ site.base_url }}/static/home/font/GrinchedRegular.otf") format('woff');
     }
 
     body {
-        background-image: url("../../../static/projects/xmas/snow1.png"),
-        url("../../../static/projects/xmas/snow2.png"),
-        url("../../../static/projects/xmas/snow3.png");
+        background-image: url("{{ site.base_url }}/static/projects/xmas/snow1.png"),
+        url("{{ site.base_url }}/static/projects/xmas/snow2.png"),
+        url("{{ site.base_url }}/static/projects/xmas/snow3.png");
     }
 
     h1 {
@@ -34,7 +36,7 @@
 </style>
 
 <audio controls loop autoplay>
-  <source src="../../../static/audio/we.wish.you.2.ogg" type="audio/ogg">
+  <source src="{{ site.base_url }}/static/audio/we.wish.you.2.ogg" type="audio/ogg">
 </audio>
 
 <div id="tree">
@@ -44,7 +46,7 @@
 <script type="text/javascript">
     const links = ['../game/', '../scene/'];
 </script>
-<script src="../../../static/projects/xmas/home.js"></script>
+<script src="{{ site.base_url }}/static/projects/xmas/home.js"></script>
 
 </body>
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fractal Spirals Symphony</title>
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../static/projects/spirals/style.css">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/spirals/style.css">
+
+    {% include analytics.html %}
 </head>
 
 <body>
@@ -14,8 +17,8 @@
 <input id="fractals" value="0"/>
 
 <script src='https://unpkg.com/glea@latest'></script>
-<script src='../../static/libs/js/gsap.min.js'></script>
-<script src='../../static/libs/js/ScrollTrigger.min.js'></script>
-<script  src="../../static/projects/spirals/script.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/gsap.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/ScrollTrigger.min.js"></script>
+<script  src="{{ site.base_url }}/static/projects/spirals/script.js"></script>
 </body>
 </html>

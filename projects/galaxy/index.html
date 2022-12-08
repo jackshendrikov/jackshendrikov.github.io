@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
     <title>Galaxy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../static/projects/galaxy/style.css">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.base_url }}/static/projects/galaxy/style.css">
+
+    {% include analytics.html %}
 </head>
 
 <body>
 <div id="scene"></div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js'></script>
-<script src="../../static/libs/js/PCDLoader.min.js"></script>
-<script src="../../static/libs/js/OrbitControls.min.js"></script>
-<script src="../../static/libs/js/OBJExporter.min.js"></script>
-<script src="../../static/libs/js/STLExporter.min.js"></script>
-<script src="../../static/libs/js/dat.gui.min.js"></script>
-<script  src="../../static/projects/galaxy/script.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/PCDLoader.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/OrbitControls.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/OBJExporter.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/STLExporter.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/dat.gui.min.js"></script>
+<script  src="{{ site.base_url }}/static/projects/galaxy/script.js"></script>
 </body>
 </html>

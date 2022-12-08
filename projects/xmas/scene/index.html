@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Merry Christmas</title>
-    <meta name="description" content="HO HO HO">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" media="screen" href="../../../static/projects/xmas/scene/scene.css">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.base_url }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="screen" href="{{ site.base_url }}/static/projects/xmas/scene/scene.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:700">
+
+    {% include analytics.html %}
 </head>
 
 <body class="body">
@@ -21,7 +23,7 @@
 </header>
 
 <audio preload="metadata">
-    <source src="../../../static/audio/mrsandman.ogg" type="audio/ogg">
+    <source src="{{ site.base_url }}/static/audio/mrsandman.ogg" type="audio/ogg">
 </audio>
 
 <article class="article">
@@ -92,8 +94,8 @@
 </ul>
 
 <!-- JS -->
-<script src="../../../static/libs/js/jquery.min.js"></script>
-<script src="../../../static/libs/js/prefixfree.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/jquery.min.js"></script>
+<script src="{{ site.base_url }}/static/libs/js/prefixfree.min.js"></script>
 
 <script>
     $(document).ready(function() {
