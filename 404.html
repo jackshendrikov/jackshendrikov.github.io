@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Not Found - 404</title>
+---
+layout: error
+title: Not Found - 404
+name: home
+custom_logo: false
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/reset.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis:400,300,500,800'>
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/home/css/error.css">
-</head>
-
-<body>
-<div class="container"></div>
-
-<script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/TweenMax.min.js"></script>
-<script src="{{ site.baseurl }}/static/home/js/error.js"></script>
 <script>
   $container.append($('<div class="main-text">\n' +
           '  <h1 class="neon" style="padding: 30px 0">404</h1>\n' +
@@ -24,6 +12,3 @@
           '  <a class="home-link" href="#" onclick="window.history.go(-1); return false;">Go back.</a>\n' +
           '</div>'));
 </script>
-
-</body>
-</html>

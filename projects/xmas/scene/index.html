@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Merry Christmas</title>
+---
+layout: project_page
+title: Merry Christmas
+name: xmas/scene
+custom_logo: false
+extra_css:
+- scene
+extra_js_lib:
+- jquery
+- prefixfree
+extra_js:
+- scene
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" media="screen" href="{{ site.baseurl }}/static/projects/xmas/scene/scene.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:700">
-
-    {% include analytics.html %}
-</head>
-
-<body class="body">
 <header class="header">
     <h1>HO HO HO</h1>
     <div class="play">
@@ -92,42 +91,3 @@
     <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
     <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 </ul>
-
-<!-- JS -->
-<script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/prefixfree.min.js"></script>
-
-<script>
-    $(document).ready(function() {
-        /* random trees */
-        $('.mountains li').find('i').each(function() {
-            let that = $(this);
-            that.css('top', Math.floor((Math.random())*100) + '%');
-            that.css('left', Math.floor((Math.random())*100) + '%');
-        });
-
-        /* random stars */
-        $('.stars').find('li').each(function() {
-            let that = $(this);
-            that.css('top', Math.floor((Math.random())*100) + '%');
-            that.css('left', Math.floor((Math.random())*100) + '%');
-        });
-
-        let audio = $('audio')[0], animation = $('article');
-        $('.play').click(function() {
-            audio.play();
-            animation.css('display','block');
-            $('.header .mask').remove();
-            $('.header .play').css('opacity','0');
-            $('h1').fadeOut(800);
-        });
-     });
-
-    $(window).on('load', function() {
-        let play = $('.play');
-        play.find('p').fadeIn(1200);
-        play.find('span').fadeOut(400);
-    });
-</script>
-</body>
-</html>

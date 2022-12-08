@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Fractal Zoom</title>
+---
+layout: project_page
+title: Fractal Zoom
+name: fractal
+custom_logo: true
+extra_css:
+- style
+extra_js:
+- script
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/fractal/style.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <div class="wrapper">
     <canvas id="c"></canvas>
 </div>
@@ -78,7 +75,3 @@
         image.crossOrigin = 'anonymous';
     }
 </script>
-
-<script  src="{{ site.baseurl }}/static/projects/fractal/script.js"></script>
-</body>
-</html>

@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Phoenix</title>
+---
+layout: project_page
+title: Phoenix
+name: phoenix
+custom_logo: true
+extra_css_lib:
+- reset
+extra_css:
+- style
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/reset.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/phoenix/style.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <script src="{{ site.baseurl }}/static/libs/js/gsap.min.js"></script>
 <script type="module">
     import * as $ from 'https://unpkg.com/three@0.118.1/build/three.module.js'
@@ -138,5 +134,3 @@
         .to(light2, { duration: 1, distance: 1, ease: 'bounce' })
         .play();
 </script>
-</body>
-</html>

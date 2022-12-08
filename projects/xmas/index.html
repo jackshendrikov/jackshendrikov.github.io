@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Happy New Year</title>
+---
+layout: project_page
+title: Happy New Year!
+name: xmas
+custom_logo: false
+extra_css_lib:
+- reset
+extra_css:
+- intro
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/reset.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/xmas/intro.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <div id="new-year">
     <svg id="new-year-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 200"  >
         <defs>
@@ -46,6 +42,3 @@
 <script>
 onload = function () {setTimeout ("document.location = 'home/';",  70 * 100)}
 </script>
-
-</body>
-</html>

@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Whirlpool</title>
-
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/whirlpool/style.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
-  <script src="{{ site.baseurl }}/static/libs/js/p5.min.js"></script>
-  <script src="{{ site.baseurl }}/static/libs/js/lodash.min.js"></script>
-  <script src="{{ site.baseurl }}/static/projects/whirlpool/script.js"></script>
-</body>
-
-</html>
+---
+layout: project_page
+title: Whirlpool
+name: whirlpool
+custom_logo: true
+extra_css:
+- style
+extra_js_lib:
+- p5
+- lodash
+extra_js:
+- script
+---

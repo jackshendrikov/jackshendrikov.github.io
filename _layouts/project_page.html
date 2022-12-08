@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>{{ page.title }}</title>
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:700">
+
+    {% if page.extra_css_libs %}
+        {% for css_lib in page.extra_css_libs %}
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/libs/css/{{ css_lib }}.min.css">
+        {% endfor %}
+    {% endif %}
+
+    {% if page.extra_css %}
+        {% for css_file in page.extra_css %}
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/projects/{{ page.name }}/{{ css_file }}.css">
+        {% endfor %}
+    {% endif %}
+
+    {% include analytics.html %}
+</head>
+
+<body>
+{{ content }}
+
+{% if page.extra_js_libs %}
+    {% for js_lib in page.extra_js_libs %}
+<script type="text/javascript" src="{{ site.baseurl }}/static/libs/js/{{ js_lib }}.min.js"></script>
+    {% endfor %}
+{% endif %}
+
+{% if page.extra_js %}
+    {% for js_file in page.extra_js %}
+<script type="text/javascript" src="{{ site.baseurl }}/static/projects/{{ page.name }}/{{ js_file }}.js"></script>
+    {% endfor %}
+{% endif %}
+</body>
+</html>

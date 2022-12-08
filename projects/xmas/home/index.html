@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Merry Christmas</title>
+---
+layout: project_page
+title: Merry Christmas
+name: xmas
+custom_logo: false
+extra_css:
+- home
+extra_js:
+- home
+---
 
-     {% include meta.html %}
 
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/xmas/home.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <style>
     @font-face {
     font-family: 'Grinched';  src: local('Grinched'), url("{{ site.baseurl }}/static/home/font/GrinchedRegular.otf") format('woff');
@@ -46,7 +44,3 @@
 <script type="text/javascript">
     const links = ['../game/', '../scene/'];
 </script>
-<script src="{{ site.baseurl }}/static/projects/xmas/home.js"></script>
-
-</body>
-</html>

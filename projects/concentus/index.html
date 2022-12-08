@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Concentus</title>
+---
+layout: project_page
+title: Concentus
+name: concentus
+custom_logo: true
+extra_css_lib:
+- font-awesome
+extra_css:
+- style
+extra_js:
+- script
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href="{{ site.baseurl }}/static/libs/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/concentus/style.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <div id="menu">
     <a id="btStartAudioVisualization" class="btn btn--start">
         <i class="fa fa-play" aria-hidden="true"></i> Start Audio
@@ -27,6 +25,3 @@
 <script>
     let url = "{{ site.baseurl }}/static/audio/audio.ogg";
 </script>
-<script src="{{ site.baseurl }}/static/projects/concentus/script.js"></script>
-</body>
-</html>

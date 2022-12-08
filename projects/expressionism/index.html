@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Expressionism</title>
+---
+layout: project_page
+title: Expressionism
+name: expressionism
+custom_logo: true
+extra_css:
+- style
+extra_js:
+- script
+---
 
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/expressionism/style.css">
-
-    {% include analytics.html %}
-</head>
-
-<body>
 <div id="container"></div>
 
 <script src="{{ site.baseurl }}/static/libs/js/three.min.js"></script>
@@ -61,7 +58,3 @@
         gl_FragColor = vec4(c,1.0);
     }
 </script>
-
-<script  src="{{ site.baseurl }}/static/projects/expressionism/script.js"></script>
-</body>
-</html>

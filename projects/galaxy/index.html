@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-    <title>Galaxy</title>
-
-    {% include meta.html %}
-
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/projects/galaxy/style.css">
-
-    {% include analytics.html %}
-</head>
+---
+layout: project_page
+title: Galaxy
+name: galaxy
+custom_logo: true
+extra_css:
+- style
+extra_js_libs:
+- PCDLoader
+- OrbitControls
+- OBJExporter
+- STLExporter
+- dat.gui
+extra_js:
+- script
+---
 
 <body>
 <div id="scene"></div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js'></script>
-<script src="{{ site.baseurl }}/static/libs/js/PCDLoader.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/OrbitControls.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/OBJExporter.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/STLExporter.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/dat.gui.min.js"></script>
-<script  src="{{ site.baseurl }}/static/projects/galaxy/script.js"></script>
-</body>
-</html>

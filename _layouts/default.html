@@ -6,9 +6,23 @@
    {% include meta.html %}
 
    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+
    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-   <link rel="stylesheet" href="{{ site.baseurl }}/static/libs/css/reset.min.css">
-   <link rel="stylesheet" href="{{ site.baseurl }}/static/home/css/intro.css">
+   <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+
+    {% if page.extra_css_libs %}
+        {% for css_lib in page.extra_css_libs %}
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/libs/css/{{ css_lib }}.min.css">
+        {% endfor %}
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/base.css">
+
+    {% if page.extra_css %}
+        {% for css_file in page.extra_css %}
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/{{ page.name }}/css/{{ css_file }}.css">
+        {% endfor %}
+    {% endif %}
 
    {% include analytics.html %}
 </head>
@@ -20,22 +34,21 @@
    <div class="inner three"></div>
 </div>
 
-<div class="container">
-   <div class="canvas-container">
-      {{ content }}
-   </div>
-</div>
+{{ content }}
 
-<script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/static/libs/js/TweenMax.min.js"></script>
-<script src="{{ site.baseurl }}/static/home/js/intro.js"></script>
-<script>
-   setTimeout(() => {
-           setTimeout(() => {
-               window.open('{{ site.baseurl }}/home/', '_self');
-           }, 80 * 100)
-       }, 0);
-</script>
+{% if page.extra_js_libs %}
+    {% for js_lib in page.extra_js_libs %}
+<script type="text/javascript" src="{{ site.baseurl }}/static/libs/js/{{ js_lib }}.min.js"></script>
+    {% endfor %}
+{% endif %}
+
+<script src="{{ site.baseurl }}/static/base.js"></script>
+
+{% if page.extra_js %}
+    {% for js_file in page.extra_js %}
+<script type="text/javascript" src="{{ site.baseurl }}/static/{{ page.name }}/js/{{ js_file }}.js"></script>
+    {% endfor %}
+{% endif %}
 
 </body>
 </html>
