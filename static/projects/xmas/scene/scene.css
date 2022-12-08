@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  background: #121020;
   height: 100%;
   overflow: hidden;
   text-rendering: optimizeLegibility;

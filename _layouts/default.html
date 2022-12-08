@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-   <title>{{ site.title }}</title>
+   <title>{{ page.title }}</title>
 
    {% include meta.html %}
 
@@ -16,11 +16,13 @@
         {% endfor %}
     {% endif %}
 
+    {% if page.title != "JackShen World Intro" %}
     <link rel="stylesheet" href="{{ site.baseurl }}/static/base.css">
+    {% endif %}
 
     {% if page.extra_css %}
         {% for css_file in page.extra_css %}
-    <link rel='stylesheet' href="{{ site.baseurl }}/static/{{ page.name }}/css/{{ css_file }}.css">
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/{{ page.path_name }}/css/{{ css_file }}.css">
         {% endfor %}
     {% endif %}
 
@@ -42,11 +44,9 @@
     {% endfor %}
 {% endif %}
 
-<script src="{{ site.baseurl }}/static/base.js"></script>
-
 {% if page.extra_js %}
     {% for js_file in page.extra_js %}
-<script type="text/javascript" src="{{ site.baseurl }}/static/{{ page.name }}/js/{{ js_file }}.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/static/{{ page.path_name }}/js/{{ js_file }}.js"></script>
     {% endfor %}
 {% endif %}
 

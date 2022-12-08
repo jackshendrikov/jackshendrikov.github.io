@@ -1,15 +1,15 @@
 ---
 layout: default
 title: JackShen World
-name: home
+path_name: home
 custom_logo: false
-extra_css_lib:
+extra_css_libs:
 - font-awesome
 - normalize
 extra_css:
 - home
 - xmas-lights
-extra_js_lib:
+extra_js_libs:
 - prefixfree
 extra_js:
 - snowstorm
@@ -34,7 +34,7 @@ extra_js:
 
         <a class="header-profile" href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/profile"><img class="profile-img" id="github" src="{{ site.baseurl }}/static/img/github-dark.webp" alt="repository"/></a>
         <i id="xmas-version" style="color: #2196f3; font-size: 1.75rem; margin-left: 10px; cursor: pointer;" class="fas fa-snowflake" onclick="snowfall()"></i>
-        <i id="default-version" style="color: var(--theme-color); font-size: 1.5rem; display: none; margin-left: 10px; cursor: pointer;" class="fas fa-undo fa-sm"></i>
+        <i id="default-version" style="color: var(--theme-color); font-size: 1.5rem; display: none; margin-left: 10px; cursor: pointer;" class="fas fa-thermometer-full"></i>
     </div>
 
     <div class="wrapper">
@@ -649,6 +649,7 @@ extra_js:
 <span class="content-section-footer-title">JackShen Engeneering, {{ site.time | date: '%Y' }}</span>
 
 <script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/static/base.js"></script>
 <script>
 let theme_flag = 1;
 let github = document.getElementById('github');

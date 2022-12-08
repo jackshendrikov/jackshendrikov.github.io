@@ -16,7 +16,7 @@
 
     {% if page.extra_css %}
         {% for css_file in page.extra_css %}
-    <link rel='stylesheet' href="{{ site.baseurl }}/static/projects/{{ page.name }}/{{ css_file }}.css">
+    <link rel='stylesheet' href="{{ site.baseurl }}/static/projects/{{ page.path_name }}/{{ css_file }}.css">
         {% endfor %}
     {% endif %}
 
@@ -34,7 +34,7 @@
 
 {% if page.extra_js %}
     {% for js_file in page.extra_js %}
-<script type="text/javascript" src="{{ site.baseurl }}/static/projects/{{ page.name }}/{{ js_file }}.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/static/projects/{{ page.path_name }}/{{ js_file }}.js"></script>
     {% endfor %}
 {% endif %}
 </body>
