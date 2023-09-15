@@ -257,18 +257,13 @@ circle {
 
 .resume-btn {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5px;
   padding: 12px 15px;
   text-transform: uppercase;
   color: #FFFFFF;
   background: #3f51b5;
   font-weight: 500;
   line-height: 1.3;
-}
-
-.resume-btn + .resume-btn {
-  margin-left: 10px;
 }
 
 .resume-btn:hover {
