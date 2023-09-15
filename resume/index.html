@@ -1,0 +1,252 @@
+---
+layout: default
+title: Jack Shendrikov's Resume
+path_name: home
+custom_logo: false
+extra_css_libs:
+- font-awesome
+- normalize
+- bootstrap
+extra_css:
+- home
+extra_js_libs:
+- prefixfree
+extra_js:
+
+---
+
+<div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+    </svg>
+</div>
+
+<div class="app">
+    <div class="header">
+        <a href=""><img class="logo-img" src="{{ site.baseurl }}/favicon.ico" alt="logo"/></a>
+        <div class="header-menu">
+            <a class="menu-link" href="{{ site.baseurl }}/portfolio/"><i class="fas fa-briefcase" aria-hidden="true"></i>&nbsp;Portfolio</a>
+        </div>
+
+        <a class="header-profile" href="https://github.com/Russkiy-Voyennyy-Korabl-Idi-Nakhuy/profile"><img class="profile-img" id="github" src="{{ site.baseurl }}/static/img/github-dark.webp" alt="repository"/></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="content-wrapper">
+                <div class="content-section">
+                    <div class="mobile-btn" style="width: 100%; text-align: center;">
+                        <a class="awesome-app-button" href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+                    </div>
+
+                    <div class="resume-header">
+                        <div class="resume-badge">
+                            <a data-toggle="modal" data-target="#shareModal">
+                                <img height="100%" width="100" src="https://avatars.githubusercontent.com/u/43554620?v=4" alt="Photo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-content">
+                        <div class="top card">
+                            <a class="btn resume-btn" href="mailto:jackshendrikov@gmail.com">Contact Me</a>
+                            <a class="btn resume-btn" href="/static/pdf/resume.pdf" download="Shendrikov Resume.pdf">Download Resume</a>
+                            <a class="btn resume-btn" href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+                        </div>
+
+                        <a id="about"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-info-circle"></i> About Me</b></span>
+                                    <p id="aboutMe">With almost 3 years as a Python Developer, I have a broad skill set spanning diverse domains. I excel in creating and managing data gathering, analysis, and automation solutions, particularly in ETL pipelines, async APIs, and data workflows. I'm well-versed in machine learning, including LSTM models, sentiment analysis, and classifiers. I'm also adept at code optimization, quality assurance, and thorough documentation. I've consistently improved team efficiency through streamlined processes and open communication.</p>
+                            </div>
+                        </div>
+
+                        <a id="exp"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-suitcase"></i> Work Experience</b></span>
+                                <ul class="post-list">
+                                    <li>
+                                        <a href="">NLP Engineer at Freelance</a>
+                                        <div class="item-list">
+                                            <p><small><i class="fa fa-calendar"></i> December 2020 - May 2021 </small></p>
+                                            <ul>
+                                                <li>Developed sentiment analysis models for Ukrainian and English texts using various LSTM models and machine learning classifiers</li>
+                                                <li>Conducted comparative analysis of models, presenting results through graphical representation.</li>
+                                                <li>Designed and built a user-friendly web application with the Django framework, incorporating a trained model to analyze and categorize text documents</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Python Developer at Simporter</a>
+                                        <div class="item-list">
+                                            <p><small><i class="fa fa-calendar"></i> May 2021 - March 2023 </small></p>
+                                            <ul>
+                                                <li>Created and maintained data collection scrapers using Scrapy.</li>
+                                                <li>Implemented internal APIs using FastAPI.</li>
+                                                <li>Revamped data processing pipeline with modular steps, parallel processing, and monitoring.</li>
+                                                <li>Designed Django and FastAPI-based admin panels for effective data management.</li>
+                                                <li>Utilized Pandas and Numpy for data processing and analysis.</li>
+                                                <li>Set up CI/CD pipelines using Jenkins and GitHub Actions for efficient development and deployment.</li>
+                                                <li>Established infrastructure services like Graylog and Prometheus for the development team.</li>
+                                                <li>Automated data scraping and delivery processes to enhance efficiency.</li>
+                                                <li>Authored technical documentation and guides for reference.</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Software Engineer at GlobalLogic</a>
+                                        <div class="item-list">
+                                            <p><small><i class="fa fa-calendar"></i> March 2023 - Present </small></p>
+                                            <ul>
+                                                <li>Collaborated on the design of a sophisticated Azure cloud solution, overseeing various scenarios and repositories, and orchestrating deployments through pipelines.</li>
+                                                <li>Performed in-depth research on a legacy codebase, overcoming challenges posed by the lack of documentation and comments.</li>
+                                                <li>Designed and implemented Python-based ETL pipeline logic for smooth data extraction, transformation, and loading.</li>
+                                                <li>Utilized Data Factory pipelines and Azure Functions in Python to optimize data workflows.</li>
+                                                <li>Optimized Python codebase to significantly improve performance.</li>
+                                                <li>Engineered asynchronous APIs using FastAPI, seamlessly connecting with InfluxDB for data integration.</li>
+                                                <li>Orchestrated setup and maintenance of robust CI/CD pipelines for continuous integration and deployment.</li>
+                                                <li>Demonstrated expertise in quality assurance by creating comprehensive tests using pytest.</li>
+                                                <li>Enhanced team understanding through well-documented code and informative architecture diagrams.</li>
+                                                <li>Delivered presentations and demonstrations to English-speaking stakeholders, effectively showcasing project progress and outcomes.</li>
+                                                <li>Divided user stories into tasks and provided accurate estimations for effective project planning.</li>
+                                                <li>Utilized Agile methodologies, seamlessly transitioning between Scrum and Kanban as project phases demanded.</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="edu"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-graduation-cap"></i> Education</b></span>
+                                <ul class="post-list ">
+                                    <li>
+                                        <a href="https://fiot.kpi.ua/">National Technical University of Ukraine 'Kyiv Polytechnic Institute'</a>
+                                        <div>
+                                            <p><small><i class="fa fa-calendar"></i> September 2018 - July 2023</small></p>
+                                            <p>Computer Engineering | GPA: 3.87 (Diploma with Honours)</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="skills"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-cogs"></i> Skills</b></span>
+                                <ul class="skill-set">
+                                    <li>Python3</li>
+                                    <li>FastAPI</li>
+                                    <li>Django</li>
+                                    <li>Flask</li>
+                                    <li>ML</li>
+                                    <li>Numpy/Pandas</li>
+                                    <li>Git</li>
+                                    <li>Prometheus/Grafana</li>
+                                    <li>Jenkins</li>
+                                    <li>Github Actions</li>
+                                    <li>Azure Pipelines</li>
+                                    <li>Azure Data Factory</li>
+                                    <li>Azure Functions</li>
+                                    <li>K8S</li>
+                                    <li>Docker</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MongoDB</li>
+                                    <li>Redis</li>
+                                    <li>InfluxDB</li>
+                                    <li>Elasticsearch</li>
+                                    <li>MSSQL</li>
+                                    <li>Scrapy</li>
+                                    <li>AsyncIO</li>
+                                    <li>Pytest</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Bootstrap</li>
+                                    <li>JQuery</li>
+                                    <li>JavaScript</li>
+                                    <li>C</li>
+                                    <li>Java</li>
+                                    <li>Assembly</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="lan"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-globe"></i> Languages</b></span>
+                                <ul class="post-list">
+                                    <li>
+                                        <a>Ukrainian</a>
+                                        <div class="w3-progress-container w3-round-xlarge">
+                                        <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a>English</a>
+                                        <div class="w3-progress-container w3-round-xlarge">
+                                        <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a>Italian</a>
+                                        <div class="w3-progress-container w3-round-xlarge">
+                                        <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:20%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a>Norwegian</a>
+                                        <div class="w3-progress-container w3-round-xlarge">
+                                        <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:20%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="add"></a>
+                        <div class="posts card">
+                            <div class="card-content white-text">
+                                <span class="card-title"><b><i class="fa fa-star"></i> Interests</b></span>
+                                <ul class="skill-set">
+                                    <li>Cryptanalysis</li>
+                                    <li>Painting</li>
+                                    <li>Papercutting</li>
+                                    <li>History</li>
+                                    <li>Chess</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<span class="content-section-footer-title">JackShen Engeneering, {{ site.time | date: '%Y' }}</span>
+
+<script src="{{ site.baseurl }}/static/libs/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/static/base.js"></script>
+<script>
+let theme_flag = 1;
+let github = document.getElementById('github');
+
+$('.dark-light').click(function() {
+    if (theme_flag) {
+        github.src = "{{ site.baseurl }}/static/img/github-light.webp";
+        theme_flag = 0;
+    }
+    else {
+        github.src = "{{ site.baseurl }}/static/img/github-dark.webp";
+        theme_flag = 1;
+    }
+});
+</script>

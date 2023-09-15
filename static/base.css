@@ -28,6 +28,8 @@
   --footer-color: #f9fafb;
   --app-color: #4a90e2;
   --projects-btn-color: #4caf50;
+  --resume-title-color: #ff9800;
+  --resume-small-color: #2196f3;
 }
 
 .light-mode {
@@ -40,6 +42,8 @@
   --inactive-color: #333333;
   --content-title-color: #3c3a3a;
   --footer-color: #f7f7f7;
+  --resume-title-color: #3f51b5;
+  --resume-small-color: #198754;
 }
 
 html {
