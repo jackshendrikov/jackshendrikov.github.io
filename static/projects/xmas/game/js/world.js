@@ -260,7 +260,7 @@ class World {
         region,
         obstacleRect
       );
-      if (intersection.width || intersection.height) {
+      if (intersection.width !== 0 && intersection.height !== 0) {
         return true;
       }
     }

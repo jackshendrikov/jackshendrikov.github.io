@@ -5,7 +5,7 @@ class Dasha {
     this.grid_ = grid;
     this.cursorKeys_ = cursorKeys;
 
-    this.sprite_ = scene.physics.add.sprite(0, 0, "girl");
+    this.sprite_ = scene.physics.add.sprite(0, 0, "dasha");
     this.sprite_.displayWidth = Config.DASHA_SPRITE_WIDTH * Config.DASHA_SCALE;
     this.sprite_.displayHeight =
       Config.DASHA_SPRITE_HEIGHT * Config.DASHA_SCALE;
@@ -48,7 +48,7 @@ class Dasha {
   createStandAnimation_(key, frameNumber) {
     this.scene_.anims.create({
       key: key,
-      frames: [{ key: "girl", frame: frameNumber }],
+      frames: [{ key: "dasha", frame: frameNumber }],
       frameRate: Config.DASHA_ANIMATION_SPEED,
     });
   }
@@ -56,7 +56,7 @@ class Dasha {
   createMoveAnimation_(key, startFrameNumber, endFrameNumber) {
     this.scene_.anims.create({
       key: key,
-      frames: this.scene_.anims.generateFrameNumbers("girl", {
+      frames: this.scene_.anims.generateFrameNumbers("dasha", {
         start: startFrameNumber,
         end: endFrameNumber,
       }),

@@ -3,7 +3,7 @@ class Grinch {
     this.scene_ = scene;
     this.grid_ = grid;
 
-    this.runSprite_ = scene.physics.add.sprite(0, 0, "grinchrun");
+    this.runSprite_ = scene.physics.add.sprite(0, 0, "grinch_run");
     this.runSprite_.displayWidth =
       Config.GRINCH_RUN_SPRITE_WIDTH * Config.GRINCH_RUN_SCALE;
     this.runSprite_.displayHeight =
@@ -26,7 +26,7 @@ class Grinch {
 
     scene.anims.create({
       key: "grinchRunRight",
-      frames: scene.anims.generateFrameNumbers("grinchrun", {
+      frames: scene.anims.generateFrameNumbers("grinch_run", {
         start: 0,
         end: 14,
       }),
